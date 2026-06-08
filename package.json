@@ -1,0 +1,28 @@
+{
+  "homepage": "http://parsa-taheri-stack.github.io/portfolio",
+  "name": "my-website",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "buildghpages": "nuxt build --preset github_pages ./dist",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "predeploy": "npm run buildghpages",
+    "deploy": "gh-pages -d ./dist/.output/public"
+  },
+  "dependencies": {
+    "@nuxt/image": "^2.0.0",
+    "@tailwindcss/vite": "^4.3.0",
+    "gsap": "^3.15.0",
+    "nuxt": "^4.4.6",
+    "tailwindcss": "^4.3.0",
+    "vue": "^3.5.34",
+    "vue-router": "^5.0.7"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
